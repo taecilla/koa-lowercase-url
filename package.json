@@ -1,0 +1,25 @@
+{
+  "name": "koa-lowercase-url",
+  "version": "1.0.0",
+  "description": "Koa middleware that redirects all requests to an URL with uppercase letters to the same URL in lowercase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa",
+    "url",
+    "lowercase",
+    "uppercase"
+  ],
+  "author": {
+	  "name": "Tae Sandoval",
+	  "email": "tae@mylodon.cl",
+	  "url": "http://taecilla.github.io"
+  },
+  "license": "CC0-1.0",
+  "repository": {
+      "type": "git",
+      "url" : "https://bitbucket.org/taecilla/koa-lowercase-url.git"
+  }
+}
