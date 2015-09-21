@@ -1,6 +1,6 @@
 {
   "name": "koa-lowercase-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Koa middleware that redirects all requests to an URL with uppercase letters to the same URL in lowercase.",
   "main": "index.js",
   "scripts": {
