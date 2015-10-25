@@ -1,3 +1,5 @@
+'use strict'
+
 module.exports = function lowercaseUrl() {
 	return function *(next) {
 		var url = this.request.url
