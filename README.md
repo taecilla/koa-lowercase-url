@@ -8,3 +8,7 @@ Koa middleware that redirects all requests to an URL with uppercase letters to t
 	   this.response.body = 'If this URL had uppercase letters before the ? now they are in lowercase.'
 	})
 	app.listen(8000)
+
+## Related module
+
+[koa-no-trailing-slash](https://www.npmjs.com/package/koa-no-trailing-slash)
