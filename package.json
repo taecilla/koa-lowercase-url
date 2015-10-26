@@ -4,7 +4,7 @@
 	"description": "Koa middleware that redirects all requests to an URL with uppercase letters to the same URL in lowercase.",
 	"main": "index.js",
 	"scripts": {
-		"test": "node test.js"
+		"test": "node tests.js"
 	},
 	"keywords": [
 		"koa",
