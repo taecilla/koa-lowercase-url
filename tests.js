@@ -88,6 +88,7 @@ curl.request(options, (error, response) => {
 				'Query is different.'
 			)
 
+			console.log(`Everything went ok!`)
 			process.exit()
 		})
 	})
