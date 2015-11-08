@@ -14,15 +14,15 @@
 	],
 	"author": {
 		"name": "Tae Sandoval",
-		"email": "tae@mylodon.cl",
-		"url": "http://taecilla.bitbucket.org"
+		"email": "taecilla@gmail.com",
+		"url": "https://taecilla.github.io"
 	},
 	"bugs": {
-		"url": "https://bitbucket.org/taecilla/koa-lowercase-url/issues",
-		"email": "tae@mylodon.cl"
+		"url": "https://github.com/taecilla/koa-lowercase-url/issues",
+		"email": "taecilla@gmail.com"
 	},
 	"license": "CC0-1.0",
-	"repository": "bitbucket:taecilla/koa-lowercase-url",
+	"repository": "taecilla/koa-lowercase-url",
 	"devDependencies": {
 		"koa": "*",
 		"curlrequest": "*",
