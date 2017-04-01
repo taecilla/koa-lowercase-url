@@ -9,12 +9,12 @@ string (key and value).
 # Usage
 
 ```javascript
-const app = require('koa')()
-app.use(reuire('koa-to-lowercase'))
-app.use(function *(next) {
-   this.response.body = 'If this URL had uppercase letters before the ? now they are in lowercase.'
-})
-app.listen(8000)
+const app = new (require('koa'));
+app.use(reuire('koa-to-lowercase')());
+app.use(async (ctx, next) => {
+   this.response.body = 'If this URL had uppercase letters before the ? now they are in lowercase.';
+});
+app.listen(8000);
 ```
 
 # License

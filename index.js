@@ -1,23 +1,18 @@
-'use strict'
+'use strict';
 
 module.exports = function lowercaseUrl() {
-	return function *(next) {
-		const href = this.request.href
+	return async function lowercaseUrl({ request, response }, next) {
+		const { origin, path, querystring } = request;
 
-		let url = href,
-			queryString = ''
+		const lowercaseable = origin + path;
+		if (/[A-Z]/.test(lowercaseable)) {
+			const location = lowercaseable.toLowerCase() + (querystring ? `?${querystring}` : '');
 
-		const queryStart = href.indexOf('?')
-		if (queryStart > 0) {
-			url = href.slice(0, queryStart)
-			queryString = href.slice(queryStart)
+			response.status = 301;
+			response.redirect(location);
+			return;
 		}
 
-		if (/[A-Z]/.test(url)) {
-			this.response.status = 301
-			this.response.redirect(url.toLowerCase() + queryString)
-			return
-		}
-		yield next
-	}
-}()
+		await next();
+	};
+};
