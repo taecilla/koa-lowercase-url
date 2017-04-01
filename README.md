@@ -12,7 +12,7 @@ string (key and value).
 const app = new (require('koa'));
 app.use(reuire('koa-to-lowercase')());
 app.use(async (ctx, next) => {
-   this.response.body = 'If this URL had uppercase letters before the ? now they are in lowercase.';
+   ctx.response.body = 'If this URL had uppercase letters before the ? now they are in lowercase.';
 });
 app.listen(8000);
 ```

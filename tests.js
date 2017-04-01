@@ -9,8 +9,8 @@ const randomString = require('randomstring');
 
 app.use(require('./index.js')());
 
-app.use(function *(next) {
-	this.response.body = 'Here is where the response body goes.\n\n';
+app.use(async ({ request, response }, next) => {
+	response.body = 'Here is where the response body goes.\n\n';
 });
 
 app.listen(port);
