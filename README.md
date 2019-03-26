@@ -10,7 +10,7 @@ string (key and value).
 
 ```javascript
 const app = new (require('koa'));
-app.use(reuire('koa-to-lowercase')());
+app.use(require('koa-to-lowercase')());
 app.use(async (ctx, next) => {
    ctx.response.body = 'If this URL had uppercase letters before the ? now they are in lowercase.';
 });
